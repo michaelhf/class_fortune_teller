@@ -5,9 +5,66 @@
   <%= stylesheet_link_tag    'application', media: 'all' %>
   <%= javascript_include_tag 'application' %>
   <%= csrf_meta_tags %>
+
+
+  <!-- Connect to Bootstrap CSS -->
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+  <!-- Connect to Font Awesome CSS -->
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+  <!-- Connect to Bootstrap Javascript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
 </head>
 <body>
-  <ul>
+
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Class Fortune Teller</a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li><a href="http://localhost:3000/lucky">Lucky Numbers</a></li>
+          <li><a href="http://localhost:3000/unlucky">Unlucky Numbers</a></li>
+          <li><a href="http://localhost:3000/zodiacs/aries">Aries</a></li>
+          <li><a href="http://localhost:3000/zodiacs/taurus">Taurus</a></li>
+          <li><a href="http://localhost:3000/zodiacs/gemini">Gemini</a></li>
+          <li><a href="http://localhost:3000/zodiacs/cancer">Cancer</a></li>
+          <li><a href="http://localhost:3000/zodiacs/leo">Leo</a></li>
+          <li><a href="http://localhost:3000/zodiacs/virgo">Virgo</a></li>
+          <li><a href="http://localhost:3000/zodiacs/libra">Libra</a></li>
+          <li><a href="http://localhost:3000/zodiacs/scorpio">Scorpio</a></li>
+          <li><a href="http://localhost:3000/zodiacs/sagittarius">Sagittarius</a></li>
+          <li><a href="http://localhost:3000/zodiacs/capricorn">Capricorn</a></li>
+          <li><a href="http://localhost:3000/zodiacs/aquarius">Aquarius</a></li>
+          <li><a href="http://localhost:3000/zodiacs/pisces">Pisces</a></li>
+        </ul>
+      </li>
+    </ul>
+
+  </div><!-- /.navbar-collapse -->
+</div><!-- /.container-fluid -->
+</nav>
+
+
+
+<!--   <ul>
     <li><a href="http://localhost:3000/lucky">Lucky Numbers</a></li>
     <li><a href="http://localhost:3000/unlucky">Unlucky Numbers</a></li>
     <li><a href="http://localhost:3000/zodiacs/aries">Aries</a></li>
@@ -22,8 +79,9 @@
     <li><a href="http://localhost:3000/zodiacs/capricorn">Capricorn</a></li>
     <li><a href="http://localhost:3000/zodiacs/aquarius">Aquarius</a></li>
     <li><a href="http://localhost:3000/zodiacs/pisces">Pisces</a></li>
-  </ul>
-
-  <%= yield %>
+  </ul> -->
+  <div class="container">
+    <%= yield %>
+  </div>
 </body>
 </html>
